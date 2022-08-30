@@ -1,20 +1,35 @@
 .grid1{
     display:flex;
     flex-wrap:wrap;
-    width:600px;
-    height:600px;
+    width:800px;
+    height:800px;
+    border-color:blue;
+    border-width:10px;
+    border-style:solid;
 }
 
-.box1{
+.box1b{
     display:flex;
     background-color:black;
-    width:60px;
-    height:60px;
+    width:40px;
+    height:40px;
 }
 
 .box1w{
     display:flex;
     background-color:white;
-    width:60px;
-    height:60px;
+    width:40px;
+    height:40px;
 }
+
+.button1 {
+    background-color: #4CAF50; 
+    border-color: chocolate;
+    border-width: 5px;
+    color: white;
+    padding: 20px 44px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+  }
