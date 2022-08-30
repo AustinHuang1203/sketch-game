@@ -1,0 +1,20 @@
+.grid1{
+    display:flex;
+    flex-wrap:wrap;
+    width:600px;
+    height:600px;
+}
+
+.box1{
+    display:flex;
+    background-color:black;
+    width:60px;
+    height:60px;
+}
+
+.box1w{
+    display:flex;
+    background-color:white;
+    width:60px;
+    height:60px;
+}
