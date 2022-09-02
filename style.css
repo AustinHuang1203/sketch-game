@@ -1,4 +1,9 @@
 
+/*.body{
+    background-color:green;
+}
+*/
+
 /*sketch box*/
 .grid1{
     display:flex;
@@ -28,6 +33,20 @@
 .box1g{
     display:flex;
     background-color:green;
+    width:40px;
+    height:40px;
+}
+
+.box1blu{
+    display:flex;
+    background-color:blue;
+    width:40px;
+    height:40px;
+}
+
+.box1r{
+    display:flex;
+    background-color:red;
     width:40px;
     height:40px;
 }

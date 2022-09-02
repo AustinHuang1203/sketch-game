@@ -4,9 +4,7 @@ let drawing1 = 0;
 // 0 is draw, 1 is stop
 let drawing2 = 1;
 
-// 0 is inactive, 1 is eraser on
-let eraser1 = 0;
-// 0  black, 1 blue, 2 green, 3 red
+// 0  black, 1 blue, 2 green, 3 red, 4 eraser
 let color = 0;
 
 
@@ -26,7 +24,7 @@ function reset(){
 //most impt thing
 function change(x){
     const box1 = document.getElementById(`box${x}`);
-    if(drawing2 == 0 && eraser1 ==0){
+    if(drawing2 == 0){
         
         if(color == 0){
             box1.className="box1b"
@@ -34,29 +32,22 @@ function change(x){
         else if (color == 2){
             box1.className="box1g"
         }
+        else if (color == 3){
+            box1.className="box1r"
+        }
+        else if (color == 4){
+            box1.className="box1w"
+        }
+        else if (color == 1){
+            box1.className="box1blu"
+        }
             
         
 
     }
-    else if(drawing2 == 0 && eraser1 == 1){
-        
-        box1.className="box1w";
-         
-    }
 
 }
 
-function eraser(){
-    if (eraser1 == 0){
-        const eraserbtn = document.getElementById("button2");
-        eraserbtn.className = "button2"
-        eraser1 = 1;
-    } else{
-        const eraserbtn1 = document.getElementById("button2");
-        eraserbtn1.className = "button1"
-        eraser1 = 0;
-    };
-}
 
 function toggle1(){
     drawing1 = 1;
@@ -86,9 +77,35 @@ function makeblack(){
     for (let i = 0, long1 = colorbtn.length; i<long1; i++){
         colorbtn[i].className = "button1 colorbtn"
     };
-    colorbtn.class = "button1 colorbtn"
     const blackbtn = document.getElementById("button4");
     blackbtn.className = "button2 colorbtn";
+}
+
+function makered(){
+    color = 3;
+    for (let i = 0, long1 = colorbtn.length; i<long1; i++){
+        colorbtn[i].className = "button1 colorbtn"
+    };
+    const redbtn = document.getElementById("button5");
+    redbtn.className = "button2 colorbtn";
+}
+
+function makewhite(){
+    color = 4;
+    for (let i = 0, long1 = colorbtn.length; i<long1; i++){
+        colorbtn[i].className = "button1 colorbtn"
+    };
+    const redbtn = document.getElementById("button2");
+    redbtn.className = "button2 colorbtn";
+}
+
+function makeblue(){
+    color = 1;
+    for (let i = 0, long1 = colorbtn.length; i<long1; i++){
+        colorbtn[i].className = "button1 colorbtn"
+    };
+    const redbtn = document.getElementById("button6");
+    redbtn.className = "button2 colorbtn";
 }
 
 
@@ -110,10 +127,16 @@ const btn1 = document.getElementById("button1");
 btn1.addEventListener("click",reset);
 
 const btn2 = document.getElementById("button2");
-btn2.addEventListener("click",eraser);
+btn2.addEventListener("click",makewhite);
 
 const btn3 = document.getElementById("button3");
 btn3.addEventListener("click", makegreen);
 
 const btn4 = document.getElementById("button4");
 btn4.addEventListener("click", makeblack);
+
+const btn5 = document.getElementById("button5");
+btn5.addEventListener("click", makered);
+
+const btn6 = document.getElementById("button6");
+btn6.addEventListener("click", makeblue);
