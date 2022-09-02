@@ -1,3 +1,5 @@
+
+/*sketch box*/
 .grid1{
     display:flex;
     flex-wrap:wrap;
@@ -8,6 +10,7 @@
     border-style:solid;
 }
 
+/* pixels */
 .box1b{
     display:flex;
     background-color:black;
@@ -22,8 +25,28 @@
     height:40px;
 }
 
+.box1g{
+    display:flex;
+    background-color:green;
+    width:40px;
+    height:40px;
+}
+
+/* button*/
 .button1 {
     background-color: #4CAF50; 
+    border-color: chocolate;
+    border-width: 5px;
+    color: white;
+    padding: 20px 44px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+  }
+
+  .button2 {
+    background-color:chocolate; 
     border-color: chocolate;
     border-width: 5px;
     color: white;
