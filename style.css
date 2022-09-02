@@ -79,36 +79,36 @@ body{
 .box1b{
     display:flex;
     background-color:black;
-    width:40px;
-    height:40px;
+    width:20px;
+    height:20px;
 }
 
 .box1w{
     display:flex;
     background-color:white;
-    width:40px;
-    height:40px;
+    width:20px;
+    height:20px;
 }
 
 .box1g{
     display:flex;
     background-color:green;
-    width:40px;
-    height:40px;
+    width:20px;
+    height:20px;
 }
 
 .box1blu{
     display:flex;
     background-color:blue;
-    width:40px;
-    height:40px;
+    width:20px;
+    height:20px;
 }
 
 .box1r{
     display:flex;
     background-color:red;
-    width:40px;
-    height:40px;
+    width:20px;
+    height:20px;
 }
 
 /* button*/

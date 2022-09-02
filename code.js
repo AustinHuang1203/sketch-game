@@ -10,12 +10,12 @@ let color = 0;
 
 //functions
 function make(){
-    for (let i = 0; i<400; i++){
+    for (let i = 0; i<1600; i++){
         document.getElementById("grid1").innerHTML += `<div id = "box${i}" class ="box1w"></div>`;
     }
 }
 function reset(){
-    for (let i = 0;i<400;i++){
+    for (let i = 0;i<1600;i++){
         let boxi = document.getElementById(`box${i}`)
         boxi.className= "box1w"
     }
